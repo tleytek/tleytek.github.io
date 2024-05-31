@@ -6,7 +6,7 @@
 
 /** Add fonts into your Next.js project:
 
-import { Libre_Franklin } from 'next/font/google'
+import { Libre_Franklin } from 'next/font/google';
 
 libre_franklin({
   subsets: ['latin'],
@@ -62,9 +62,9 @@ export function Component() {
                         <div className="flex flex-col justify-center space-y-4">
                             <div className="space-y-2">
                                 <h1
-                                    className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Hi, I'm Mateus Koehler</h1>
+                                    className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Hi, I&apos;m Mateus Koehler</h1>
                                 <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                                    I'm a software engineer with a passion for building beautiful and functional web applications.
+                                    I&apos;m a software engineer with a passion for building beautiful and functional web applications.
                                 </p>
                             </div>
                             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -179,7 +179,7 @@ export function Component() {
                         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">About Me</h2>
                         <p
                             className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                            I'm a software engineer with a passion for building beautiful and functional web applications. I have
+                            I&apos;m a software engineer with a passion for building beautiful and functional web applications. I have
                             experience working with a variety of technologies, including React, Node.js, and PostgreSQL.
                         </p>
                         <p
@@ -209,7 +209,7 @@ export function Component() {
                         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Get in Touch</h2>
                         <p
                             className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                            Have a project in mind or just want to say hello? Fill out the form below and I'll get back to you as soon
+                            Have a project in mind or just want to say hello? Fill out the form below and I&apos;ll get back to you as soon
                             as possible.
                         </p>
                     </div>
