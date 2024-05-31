@@ -4,27 +4,8 @@
 * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
 */
 
-/** Add fonts into your Next.js project:
-
-import { Libre_Franklin } from 'next/font/google';
-
-libre_franklin({
-  subsets: ['latin'],
-  display: 'swap',
-})
-
-To read more about using these font, please visit the Next.js documentation:
-- App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
-- Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
-**/
-
-/** Add border radius CSS variable to your global CSS:
-
-:root {
-  --radius: 0.5rem;
-}
-**/
 import Link from "next/link"
+import Image from "next/image"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
@@ -34,7 +15,6 @@ export function Component() {
         (<div className="flex flex-col min-h-[100dvh]">
             <header className="px-4 lg:px-6 h-14 flex items-center">
                 <Link className="flex items-center justify-center" href="#">
-                    <BriefcaseIcon className="h-6 w-6" />
                     <span className="sr-only">Portfolio</span>
                 </Link>
                 <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -56,7 +36,7 @@ export function Component() {
                 </nav>
             </header>
             <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div
                         className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
                         <div className="flex flex-col justify-center space-y-4">
@@ -74,13 +54,13 @@ export function Component() {
                                     View Work
                                 </Link>
                                 <Link
-                                    className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-gray-800"
+                                    className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                                     href="#">
                                     Contact Me
                                 </Link>
                             </div>
                         </div>
-                        <img
+                        <Image
                             alt="Hero"
                             className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
                             height="550"
@@ -90,7 +70,7 @@ export function Component() {
                 </div>
             </section>
             <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div
                         className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
@@ -104,7 +84,7 @@ export function Component() {
                     <div
                         className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
                         <div className="group relative overflow-hidden rounded-xl">
-                            <img
+                            <Image
                                 alt="Project 1"
                                 className="aspect-video w-full object-cover transition-all duration-300 group-hover:scale-105"
                                 height="310"
@@ -126,7 +106,7 @@ export function Component() {
                             </div>
                         </div>
                         <div className="group relative overflow-hidden rounded-xl">
-                            <img
+                            <Image
                                 alt="Project 2"
                                 className="aspect-video w-full object-cover transition-all duration-300 group-hover:scale-105"
                                 height="310"
@@ -148,7 +128,7 @@ export function Component() {
                             </div>
                         </div>
                         <div className="group relative overflow-hidden rounded-xl">
-                            <img
+                            <Image
                                 alt="Project 3"
                                 className="aspect-video w-full object-cover transition-all duration-300 group-hover:scale-105"
                                 height="310"
@@ -174,7 +154,7 @@ export function Component() {
             </section>
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div
-                    className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+                    className="container mx-auto grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">About Me</h2>
                         <p
@@ -184,8 +164,7 @@ export function Component() {
                         </p>
                         <p
                             className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                            In my free time, I enjoy exploring new technologies, reading about the latest trends in web development,
-                            and contributing to open-source projects.
+                            In my free time, I enjoy exploring new technologies, reading about the latest trends in web development, and ricing my workflow (I use NeoVim btw (please get that reference)).
                         </p>
                     </div>
                     <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
@@ -195,7 +174,7 @@ export function Component() {
                             Download CV
                         </Link>
                         <Link
-                            className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-gray-800"
+                            className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                             href="#">
                             Contact Me
                         </Link>
@@ -204,7 +183,7 @@ export function Component() {
             </section>
             <section className="w-full py-12 md:py-24 lg:py-32 border-t">
                 <div
-                    className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+                    className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
                     <div className="space-y-3">
                         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Get in Touch</h2>
                         <p
@@ -238,24 +217,5 @@ export function Component() {
                 </nav>
             </footer>
         </div>)
-    );
-}
-
-function BriefcaseIcon(props) {
-    return (
-        (<svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round">
-            <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-            <rect width="20" height="14" x="2" y="6" rx="2" />
-        </svg>)
     );
 }
