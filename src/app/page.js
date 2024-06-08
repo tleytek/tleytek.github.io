@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Hero from "@/app/components/Hero"
 import Work from "@/app/components/Work"
 import About from "@/app/components/About"
