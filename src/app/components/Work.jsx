@@ -22,7 +22,7 @@ export default function Work() {
                         <div className="flex h-full flex-col justify-between">
                             <div>
                                 <h3 className="text-xl font-bold text-gray-50">Mortal Online 2 Fishing</h3>
-                                <p className="mt-2 text-sm text-gray-300">A eletron application for fishing and storing fishing information</p>
+                                <p className="mt-2 text-sm text-gray-300">An Electron.js application for fishing and storing fishing information</p>
                             </div>
                             <Link
                                 className="mt-2 inline-flex h-9 items-center justify-center rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-800 dark:text-gray-50 dark:hover:bg-gray-700"
