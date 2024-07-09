@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --radius: 0.5rem;
+    --radius: 0.5rem;
 }
 
 html {
@@ -11,9 +11,14 @@ html {
 }
 
 body {
-  font-family: var(--font-libre_franklin), sans-serif;
+    font-family: var(--font-libre_franklin), sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-libre_franklin), sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-libre_franklin), sans-serif;
 }
