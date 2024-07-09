@@ -12,12 +12,13 @@ const libre_franklin = Libre_Franklin({
   variable: "--font-libre_franklin",
 });
 
+export const metadata = {
+  "google-site-verification": "S0xXXRg20vTF2y91OrHMCVEe_3fz9ITnRvKi2rX2ISE",
+};
+
 export default function Layout({ children }) {
   return (
     <html lang="en">
-      <div className="invisible">
-        google-site-verification: google139f688dc615d6e6.html
-      </div>
       <body className={libre_franklin.variable}>
         <Navbar></Navbar>
         {children}
