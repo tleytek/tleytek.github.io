@@ -15,7 +15,7 @@ const libre_franklin = Libre_Franklin({
 export default function Layout({ children }) {
   return (
     <html lang="en">
-      <div className="hidden">
+      <div className="invisible">
         google-site-verification: google139f688dc615d6e6.html
       </div>
       <body className={libre_franklin.variable}>
