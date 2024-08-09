@@ -1,7 +1,7 @@
 // This is the root layout component for your Next.js app.
 // Learn more: https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required
 
-import Navbar from '@/app/components/Navbar'
+// import Navbar from '@/app/components/Navbar'
 
 import { Libre_Franklin } from 'next/font/google'
 import './globals.css'
@@ -21,9 +21,11 @@ export const metadata = {
 
 export default function Layout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" className="bg-black/90 text-white">
             <body className={libre_franklin.variable}>
+                {/*
                 <Navbar></Navbar>
+                */}
                 {children}
             </body>
         </html>
